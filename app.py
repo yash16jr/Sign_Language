@@ -19,7 +19,6 @@ def home():
     return render_template("index.html")
 
 
-
 @app.route("/predict", methods=['POST','GET'])
 @cross_origin()
 def predictRoute():
@@ -45,8 +44,6 @@ def predictRoute():
     return jsonify(result)
 
 
-
-
 @app.route("/live", methods=['GET'])
 @cross_origin()
 def predictLive():
@@ -58,10 +55,6 @@ def predictLive():
     except ValueError as val:
         print(val)
         return Response("Value not found inside  json data")
-    
-
-
-
 
 
 if __name__ == "__main__":
