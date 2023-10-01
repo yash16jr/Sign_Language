@@ -1,4 +1,6 @@
 signlang
 .vscode
 logs
+.github
+
 #dist
